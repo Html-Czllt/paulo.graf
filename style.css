@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --bg-color: #0d0d0d; /* Fundo preto bem escuro */
+    --text-color: #e0e0e0; /* Texto branco acinzentado */
+    --highlight-color: #00ff7f; /* Verde fosco para destaques */
+}
+
+.highlight {
+    color: var(--highlight-color); /* Verde fosco */
+    font-weight: bold; /* Deixar em negrito */
+}
+
+body {
+    background-color: var(--bg-color); /* Fundo preto */
+    color: var(--text-color); /* Texto branco acinzentado */
+    font-family: 'Nunito Sans', sans-serif; /* Fonte 'Nunito Sans' */
+    height: 100vh;
+}
+
+header {
+    background-color: var(--bg-color); /* Cor do fundo do header */
+    text-align: center;
+    padding: 1px;
+    border-bottom: 2px solid var(--text-color); /* Borda inferior branca acinzentada */
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--highlight-color); /* Verde fosco para o título */
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color); /* Texto branco acinzentado */
+    margin: 0 2rem 1rem 0rem;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--highlight-color); /* Fundo verde fosco ao passar o mouse */
+    color: var(--bg-color); /* Texto muda para a cor de fundo */
+}
+
+.graficos-container {
+    margin: 5rem;
+}
+
+.grafico {
+    margin-top: 3rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--highlight-color) solid 4px; /* Bordas em verde fosco */
+    border-radius: 0%;
+}
+
+span {
+    font-weight: bold;
+    color: var(--highlight-color); /* Verde fosco para destaques */
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color); /* Cor de fundo do rodapé */
+    color: var(--highlight-color); /* Texto verde fosco */
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    border-top: 2px solid var(--text-color); /* Bordas brancas acinzentadas */
+}
